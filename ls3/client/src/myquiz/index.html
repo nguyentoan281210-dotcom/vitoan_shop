@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App - Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-screen" class="screen">
+            <h1>Chào mừng tới Quiz App</h1>
+            <button id="start-btn" class="btn">Bắt đầu Quiz</button>
+            <button id="leaderboard-btn" class="btn secondary">Xem bảng xếp hạng</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="score-display">Điểm: 0</span>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">Câu hỏi sẽ hiển thị ở đây?</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn-choice">Đáp án 1</button>
+                    <button class="btn-choice">Đáp án 2</button>
+                    <button class="btn-choice">Đáp án 3</button>
+                    <button class="btn-choice">Đáp án 4</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="end-screen" class="screen hidden">
+            <h1>Hoàn thành!</h1>
+            <p>Số điểm của bạn: <span id="final-score">0</span></p>
+            <div class="save-score-container">
+                <input type="text" id="username" placeholder="Nhập tên của bạn...">
+                <button id="save-btn" class="btn">Lưu điểm</button>
+            </div>
+            <button onclick="location.reload()" class="btn secondary">Chơi lại</button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
