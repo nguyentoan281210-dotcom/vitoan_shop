@@ -33,9 +33,6 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    /* width: 10px;
-    padding: 50px; */
-    /* border: 1px solid black; */
     margin-left: 0px 30px;
     padding: 0px 30px;
 
@@ -58,16 +55,33 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    /* width: 10px;
-    padding: 50px; */
-    /* border: 1px solid black; */
     margin-left: 0px 30px;
     padding: 0px 30px;
 }
 
 .content .card {
     margin: 0px 70px 30px;
-    /* margin-bottom: 100px; */
+
+}
+
+.content-2 {
+    margin-top: 50px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.content-2 .content-card-2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 0px 30px;
+    padding: 0px 30px;
+}
+
+.content-2 .card {
+    margin: 0px 70px 30px;
 }
 
 footer {
