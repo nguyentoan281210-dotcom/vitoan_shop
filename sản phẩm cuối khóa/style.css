@@ -50,11 +50,12 @@ footer {
     text-align: center;
 }
 
-#form{
-    flex: 1;
+#form-t{
+    /* flex: 1; */
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-top: 30%
 }
 
 
