@@ -71,7 +71,6 @@ footer {
 } */
 
 .content h5 {
-    padding-top: 1%;
     display: flex;
     /* flex-direction: row; */
     justify-content: center;
@@ -80,7 +79,8 @@ footer {
     text-transform: uppercase;
     color: #333;
     position: relative;
-    /* margin-bottom: 10px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .main-card {
@@ -97,6 +97,13 @@ footer {
 .d-flex img {
     width: 15px;
     height: 15px;
+}
+
+.content-2{
+    margin-top: -16px;
+}
+.content-2 h5{
+    margin-bottom: 37px;
 }
 
 footer{
