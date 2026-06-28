@@ -43,10 +43,9 @@
 // }
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-// import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-auth.js";
-// import { getFirestore } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyCsazhg-XN02UcJbeJKhTS1vikgGiNckZk",
@@ -54,15 +53,13 @@ const firebaseConfig = {
     projectId: "spck2-822ad",
     storageBucket: "spck2-822ad.firebasestorage.app",
     messagingSenderId: "248899152311",
-    appId: "1:248899152311:web:9b7426a9f89fdfe758a032",
-    measurementId: "G-CGK6MBE6C2"
+    appId: "1:248899152311:web:9cd7c46eb2740c0358a032",
+    measurementId: "G-ZJV7MK7WLP"
 };
 
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 const auth = getAuth(app);
-// const db = getFirestore(app);
-// export { auth, db }
+
 
 
 
@@ -83,48 +80,5 @@ submit.addEventListener("onclick", function (event) {
         })
 })
 
-// const handleSignUp = (email, password) => {
-//     createUserWithEmailAndPassword(auth, email, password)
-//         .then((userCredential) => {
-//             // Đăng ký thành công!
-//             const user = userCredential.user;
-//             console.log("Đăng ký thành công tài khoản:", user.email);
-//             alert("Tạo tài khoản thành công!");
-//         })
-//         .catch((error) => {
-//             // Xử lý lỗi (ví dụ: email đã tồn tại, mật khẩu quá yếu...)
-//             console.error("Lỗi đăng ký:", error.code, error.message);
-//             alert("Đăng ký thất bại: " + error.message);
-//         });
-// };
 
-// const handleLogin = (email, password) => {
-//     signInWithEmailAndPassword(auth, email, password)
-//         .then((userCredential) => {
-//             // Đăng nhập thành công!
-//             const user = userCredential.user;
-//             console.log("Đăng nhập thành công:", user.email);
-//             alert("Chào mừng quay trở lại!");
-//         })
-//         .catch((error) => {
-//             console.error("Lỗi đăng nhập:", error.code, error.message);
-//             alert("Sai tài khoản hoặc mật khẩu!");
-//         });
-// };
 
-// onAuthStateChanged(auth, (user) => {
-//     if (user) {
-//         console.log("User hiện đang đăng nhập:", user.uid);
-//         // Bạn có thể ẩn form Đăng nhập và hiện nút Đăng xuất tại đây
-//     } else {
-//         console.log("Chưa có user nào đăng nhập.");
-//         // Hiện form Login/Register bình thường
-//     }
-// });
-
-// // Hàm xử lý Đăng xuất (Logout)
-// const handleLogout = () => {
-//     signOut(auth).then(() => {
-//         alert("Đăng xuất thành công!");
-//     });
-// };

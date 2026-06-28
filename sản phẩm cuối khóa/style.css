@@ -19,7 +19,6 @@ footer {
     border-bottom: 1px solid #ddd;
     text-align: center;
 }
-
 .container-fluid{
     display: flex;
     justify-content: space-between;
