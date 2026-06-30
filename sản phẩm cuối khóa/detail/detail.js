@@ -56,10 +56,10 @@ import { products } from "./product.js";
 
 // 1. Phải đồng nhất tên biến (Thêm chữ 's' vào params)
 const params = new URLSearchParams(window.location.search);
-const id = Number(params.get("id")); // Sửa thành params.get
+const id = Number(params.get("idhtml")); // Sửa thành params.get
 
 // 2. Tìm kiếm sản phẩm
-const product = products.find(item => Number(item.id) === id);
+const product = products.find(item => Number(item.id) === idhtml);
 
 // 3. Kiểm tra và đổ dữ liệu ra giao diện
 if (product) {

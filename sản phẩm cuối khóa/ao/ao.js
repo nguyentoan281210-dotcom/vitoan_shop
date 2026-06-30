@@ -1,4 +1,4 @@
-import { products } from "../products.js";
+import { products } from "../product.js";
 const list = document.getElementById("product-list");
 products.forEach(product => {
     list.innerHTML += `
@@ -13,7 +13,7 @@ ${product.name}
 </p>
 <h5>${product.price}</h5>
 <a
-href="../detail/detail.html?id=${product.id}"
+href="/sản phẩm cuối khóa/detail/detail.html?id=${product.id}"
 class="btn btn-primary">
 Mua hàng
 </a>
