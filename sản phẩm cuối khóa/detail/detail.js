@@ -52,29 +52,22 @@
 
 // }
 
-import { products } from "../products.js";
+import { products } from "./product.js";
 
+// 1. Phải đồng nhất tên biến (Thêm chữ 's' vào params)
 const params = new URLSearchParams(window.location.search);
+const id = Number(params.get("id")); // Sửa thành params.get
 
-const id = Number(params.get("id"));
+// 2. Tìm kiếm sản phẩm
+const product = products.find(item => Number(item.id) === id);
 
-const product = products.find(item => item.id === id);
-
+// 3. Kiểm tra và đổ dữ liệu ra giao diện
 if (product) {
-
     document.getElementById("product-img").src = product.image;
-
     document.getElementById("product-img").alt = product.name;
-
     document.getElementById("product-name").innerText = product.name;
-
     document.getElementById("product-desc").innerText = product.desc;
-
     document.getElementById("product-price").innerText = product.price;
-
-}
-else {
-
+} else {
     document.querySelector(".detail-container").innerHTML = "<h2>Không tìm thấy sản phẩm</h2>";
-
 }
