@@ -73,7 +73,7 @@
 // }
 
 
-import { products } from "../product/product.js";
+import { products } from "../product.js/product.js";
 const params = new URLSearchParams(window.location.search);
 const id = Number(params.get("idhtml"));
 const product = products.find(item => Number(item.id) === id);
